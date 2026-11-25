@@ -1,0 +1,718 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFE2B8;
+    color: #512D13;
+    font-family: Arial, sans-serif;
+}
+
+/* MENU PRINCIPAL */
+
+header {
+    background-color: #60300F;
+    color: #FFE2B8;
+    height: 85px;
+    padding: 0 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo h2 {
+    font-size: 23px;
+    letter-spacing: 3px;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: #FFE2B8;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover,
+nav a.activo {
+    color: #F6B86D;
+}
+
+/* ELEMENTOS GENERALES */
+
+.etiqueta {
+    color: #D08332;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #60300F;
+    color: #FFE2B8;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 30px;
+    margin-top: 22px;
+    font-size: 14px;
+}
+
+.boton:hover {
+    background-color: #D08332;
+}
+
+/* PAGINA DE INICIO */
+
+.portada {
+    height: 600px;
+    padding: 50px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.texto-portada {
+    width: 50%;
+}
+
+.texto-portada h1 {
+    font-size: 95px;
+    color: #60300F;
+    margin-bottom: 15px;
+}
+
+.texto-portada h2 {
+    font-size: 30px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.texto-portada p {
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 470px;
+}
+
+.imagen-portada {
+    width: 42%;
+    height: 400px;
+}
+
+.imagen-portada img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 180px 180px 15px 15px;
+}
+
+/* PROYECTOS DE INICIO */
+
+.vista-proyectos {
+    background-color: #F8D5A5;
+    padding: 45px 8%;
+}
+
+.titulo-seccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.titulo-seccion h2 {
+    font-size: 32px;
+}
+
+.titulo-seccion a {
+    color: #60300F;
+    text-decoration: none;
+}
+
+.galeria-inicio {
+    display: flex;
+    gap: 20px;
+}
+
+.galeria-inicio img {
+    width: 33.3%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.frase-final {
+    padding: 45px 8%;
+    text-align: center;
+}
+
+.frase-final h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.frase-final p {
+    font-size: 18px;
+}
+
+.frase-final span {
+    color: #D08332;
+    margin: 0 10px;
+}
+
+.frase-final a {
+    display: inline-block;
+    color: #60300F;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+/* PAGINA SOBRE MI */
+
+.sobre-mi {
+    height: 600px;
+    padding: 45px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre-texto {
+    width: 55%;
+}
+
+.sobre-texto h1 {
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+.sobre-texto h2 {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.sobre-texto p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.sobre-imagen {
+    width: 40%;
+    height: 390px;
+}
+
+.sobre-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.mis-intereses {
+    background-color: #F8D5A5;
+    padding: 55px 7%;
+    text-align: center;
+}
+
+.mis-intereses h2 {
+    font-size: 32px;
+}
+
+.subtitulo {
+    margin-top: 12px;
+    margin-bottom: 35px;
+}
+
+.intereses {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.intereses article {
+    width: 25%;
+}
+
+.circulo {
+    width: 75px;
+    height: 75px;
+    border: 1px solid #60300F;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin: 0 auto 15px;
+}
+
+.intereses h3 {
+    margin-bottom: 10px;
+}
+
+.intereses p {
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+/* TITULOS DE PAGINAS */
+
+.encabezado-pagina {
+    text-align: center;
+    padding: 65px 20px 45px;
+}
+
+.encabezado-pagina h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.encabezado-pagina p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* PAGINA DE PIEZAS */
+
+.galeria-piezas {
+    padding: 20px 7% 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+
+.tarjeta {
+    background-color: #F8D5A5;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.tarjeta-texto {
+    padding: 25px;
+}
+
+.numero {
+    color: #D08332;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.tarjeta-texto h2 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.tarjeta-texto p {
+    line-height: 1.6;
+}
+
+/* PAGINA DE PROCESO */
+
+.pasos {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 35px 7% 65px;
+}
+
+.paso {
+    width: 25%;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.numero-paso {
+    width: 85px;
+    height: 85px;
+    border: 1px solid #D08332;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin: 0 auto 20px;
+}
+
+.paso h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.paso p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.frase-proceso {
+    background-color: #F8D5A5;
+    padding: 45px 8%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.frase-proceso img {
+    width: 45%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.frase-proceso div {
+    width: 55%;
+}
+
+.frase-proceso h2 {
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+.frase-proceso p {
+    line-height: 1.7;
+}
+
+/* PAGINA DE CONTACTO */
+
+.contacto {
+    height: 600px;
+    padding: 50px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.contacto-texto {
+    width: 55%;
+}
+
+.contacto-texto h1 {
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+.contacto-texto h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.contacto-texto p {
+    line-height: 1.7;
+}
+
+.dato-contacto {
+    margin-top: 25px;
+}
+
+.dato-contacto h3 {
+    margin-bottom: 8px;
+}
+
+.contacto-imagen {
+    width: 40%;
+    height: 380px;
+}
+
+.contacto-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 180px 180px 15px 15px;
+}
+
+/* PIE DE PAGINA */
+
+footer {
+    background-color: #60300F;
+    color: #FFE2B8;
+    text-align: center;
+    padding: 30px;
+}
+
+footer h2 {
+    font-size: 25px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+
+
+/*diseño para dispositivos moviles*/
+
+@media (max-width: 768px) {
+
+    /* MENU PRINCIPAL */
+
+    header {
+        height: auto;
+        padding: 20px 5%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo h2 {
+        font-size: 21px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+
+    /* PAGINA DE INICIO */
+
+    .portada {
+        height: auto;
+        padding: 45px 7%;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .texto-portada {
+        width: 100%;
+    }
+
+    .texto-portada h1 {
+        font-size: 58px;
+    }
+
+    .texto-portada h2 {
+        font-size: 26px;
+    }
+
+    .texto-portada p {
+        font-size: 15px;
+    }
+
+    .imagen-portada {
+        width: 100%;
+        height: 300px;
+    }
+
+
+    /* PROYECTOS DE INICIO */
+
+    .vista-proyectos {
+        padding: 35px 6%;
+    }
+
+    .titulo-seccion {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .titulo-seccion h2 {
+        font-size: 27px;
+    }
+
+    .galeria-inicio {
+        flex-wrap: wrap;
+    }
+
+    .galeria-inicio img {
+        width: 100%;
+        height: 230px;
+    }
+
+    .frase-final {
+        padding: 40px 7%;
+    }
+
+    .frase-final h2 {
+        font-size: 25px;
+    }
+
+
+    /* PAGINA SOBRE MI */
+
+    .sobre-mi {
+        height: auto;
+        padding: 40px 7%;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .sobre-texto {
+        width: 100%;
+    }
+
+    .sobre-texto h1 {
+        font-size: 42px;
+    }
+
+    .sobre-texto h2 {
+        font-size: 22px;
+    }
+
+    .sobre-imagen {
+        width: 100%;
+        height: 320px;
+    }
+
+    .mis-intereses {
+        padding: 40px 6%;
+    }
+
+    .intereses {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .intereses article {
+        width: 45%;
+    }
+
+
+    /* TITULOS DE PAGINAS */
+
+    .encabezado-pagina {
+        padding: 45px 20px 35px;
+    }
+
+    .encabezado-pagina h1 {
+        font-size: 40px;
+    }
+
+
+    /* PAGINA DE PIEZAS */
+
+    .galeria-piezas {
+        grid-template-columns: 1fr;
+        padding: 20px 6% 45px;
+        gap: 25px;
+    }
+
+    .tarjeta img {
+        height: 250px;
+    }
+
+    .tarjeta-texto {
+        padding: 20px;
+    }
+
+    .tarjeta-texto h2 {
+        font-size: 22px;
+    }
+
+
+    /* PAGINA DE PROCESO */
+
+    .pasos {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 25px 6% 45px;
+        gap: 15px;
+    }
+
+    .paso {
+        width: 45%;
+        padding: 20px 10px;
+    }
+
+    .paso h2 {
+        font-size: 21px;
+    }
+
+    .frase-proceso {
+        padding: 35px 7%;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .frase-proceso img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .frase-proceso div {
+        width: 100%;
+    }
+
+    .frase-proceso h2 {
+        font-size: 26px;
+    }
+
+
+    /* PAGINA DE CONTACTO */
+
+    .contacto {
+        height: auto;
+        padding: 40px 7%;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contacto-texto {
+        width: 100%;
+    }
+
+    .contacto-texto h1 {
+        font-size: 43px;
+    }
+
+    .contacto-texto h2 {
+        font-size: 22px;
+    }
+
+    .contacto-imagen {
+        width: 100%;
+        height: 300px;
+    }
+
+
+    /* PIE DE PAGINA */
+
+    footer {
+        padding: 25px 15px;
+    }
+
+    footer h2 {
+        font-size: 22px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+}
